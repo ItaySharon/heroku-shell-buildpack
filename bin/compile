@@ -9,6 +9,8 @@ function indent() {
   esac
 }
 
+cd $1
+
 chmod +x ./compile.sh
 echo "-----> Running script"
 ./compile.sh | indent
